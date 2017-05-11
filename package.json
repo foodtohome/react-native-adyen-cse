@@ -1,0 +1,26 @@
+{
+  "name": "react-native-adyen-cse",
+  "version": "0.0.1",
+  "description": "Unofficial React Native wrapper for native Adyen's Client-Side Encryption (CSE) library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foodtohome/react-native-adyen-cse.git"
+  },
+  "keywords": [
+    "react-native",
+    "adyen",
+    "cse",
+    "ios",
+    "android"
+  ],
+  "author": "Juri Saltbacka <juri@foodtohome.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foodtohome/react-native-adyen-cse/issues"
+  },
+  "homepage": "https://github.com/foodtohome/react-native-adyen-cse#readme"
+}
