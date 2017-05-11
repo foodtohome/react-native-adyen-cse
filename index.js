@@ -2,4 +2,4 @@
 
 import RNAdyenCSE from './lib/RNAdyenCSE';
 
-module.exports = (options) => new RNBugsnag(options);
+module.exports = (options) => new RNAdyenCSE(options);
