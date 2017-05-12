@@ -223,6 +223,14 @@
 		BC1A8D481EC4B697007F31CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../../ios/**";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/AdyenCSE/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(PROJECT_DIR)/../../../ios/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -232,6 +240,14 @@
 		BC1A8D491EC4B697007F31CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../../ios/**";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/AdyenCSE/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(PROJECT_DIR)/../../../ios/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -257,6 +273,7 @@
 				BC1A8D491EC4B697007F31CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

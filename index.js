@@ -1,5 +1,9 @@
-'use strict';
+import { NativeModules } from 'react-native';
 
-import RNAdyenCSE from './lib/RNAdyenCSE';
+const NativeAdyenCSE = NativeModules.RNAdyenCSE;
 
-module.exports = (options) => new RNAdyenCSE(options);
+export default {
+  encryptCardData(card, publicKey) {
+    return NativeAdyenCSE.encryptCardData({ card, publicKey });
+  }
+}

@@ -2,12 +2,14 @@
 //  RNAdyenCSE.m
 //  RNAdyenCSE
 //
-//  Created by Juri on 11/05/2017.
+//  Created by Juri Saltbacka on 11/05/2017.
 //  Copyright © 2017 Food To Home Ltd Oy. All rights reserved.
 //
 
 #import "RNAdyenCSE.h"
-#import <AdyenCSE/AdyenCSE.h>
+#import <AdyenCSE.h>
+#import <ADYCard.h>
+#import <ADYEncrypter.h>
 
 @implementation RNAdyenCSE
 
@@ -29,11 +31,11 @@ RCT_EXPORT_METHOD(encryptCardData:(NSDictionary*)params
   card.expiryYear = cardParams[@"expiryYear"];
 
   NSData *cardData = [card encode];
-  NSString *encryptedData = [AdyenCSE encrypt:cardData publicKeyInHex:publicKey];
+  NSString *encryptedData = [ADYEncrypter encrypt:cardData publicKeyInHex:publicKey];
   if(encryptedData) {
     resolve(encryptedData);
   } else {
-    reject(@"-1", @"encryption failed", nil);
+    reject(@"-1", @"Encryption failed", nil);
   }
 }
 
