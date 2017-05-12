@@ -1,6 +1,6 @@
 {
   "name": "react-native-adyen-cse",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Unofficial React Native wrapper for native Adyen's Client-Side Encryption (CSE) library",
   "main": "index.js",
   "scripts": {
